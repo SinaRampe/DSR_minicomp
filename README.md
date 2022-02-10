@@ -12,7 +12,7 @@ This mini competition is adapted from the [Kaggle Rossmann challenge](https://ww
 
 **Output**: submission.csv file from the holdout.csv file with two columns: (store) ID and Sales Prediction.
 
-###Team members
+### Team members
 Sina Rampe
 
 Oskar Klaja
@@ -71,10 +71,26 @@ data
 └── train.csv
 
 ## 4. Model description
-###Features
-
 ### Model
+The prediction was created using a Gradient Boosted Tree (with xgboost).
+
+### Features used
+Existing features (used as is):
+
+'DayOfWeek', 'SchoolHoliday', 'CompetitionDistance', 'Promo2', 'Open', 'Promo', 'Store'.
+
+Existing features (encoded):
+
+'Store_encoded', 'StoreType', 'Assortment', 'StateHoliday'.
+
+Engineered features:
+
+'Year', ‘Month’, ‘Day’, ‘WeekOfYear’, 'PromoMonth'.
 
 ### Scoring
+
+On kaggle, this model was evaluated on the root mean square percentage error (RMSPE).
+
+RMSPE = 
 
 
