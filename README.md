@@ -94,6 +94,9 @@ Engineered features:
 'Year', ‘Month’, ‘Day’, ‘WeekOfYear’, 'PromoMonth'.
 
 
+Below are the features ranked in terms of importance.
+
+
 ![](./visualisations/importances.png)
 
 
@@ -119,8 +122,8 @@ Feature Engineering:
 - target encode all features
 - combination of the above two
 - cyclic encoding with sinus and cosinus for DayOfWeek, day, month, year.
-- upsampling store and assortment (see figures 1 and 2 below).
-- imputing values for CompetitionDistance. 75km (maximum value for the feature) was set for the missing values (see figure 3 below).
+- upsampling store and assortment (see figures 2 and 3 below).
+- imputing values for CompetitionDistance. 75km (maximum value for the feature) was set for the missing values (see figure 1 below).
 
 ![](./visualisations/features.png)
 
