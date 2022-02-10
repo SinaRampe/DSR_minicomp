@@ -59,7 +59,7 @@ Once cloned, the structure of the folder should look like:
 >
 > ├── README.md
 >
-> ├── Requirements.txt`
+> ├── Requirements.txt
 > 
 > └── xgb_group1.ipynb`
 
