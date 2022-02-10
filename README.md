@@ -47,32 +47,36 @@ Otherwise: install jupyter notebook in miniconda environment with `pip3 install 
 
 Once cloned, the structure of the folder should look like:
 
-DSR_minicomp
-
-├── data
-
-├── team-work
-
-├── .gitignore
-
-├── README.md
-
-└── Requirements.txt`
-
+> DSR_minicomp
+>
+> ├── data
+>
+> ├── development_files
+> 
+> ├── visualisations
+> 
+> ├── .gitignore
+>
+> ├── README.md
+>
+> └── Requirements.txt`
 
 The data folder should look like:
 
-data
 
-├── holdout_b29.csv
+> ├── holdout_b29.csv
+> 
+> ├── store.csv
+>
+> └── train.csv
 
-├── store.csv
-
-└── train.csv
 
 ## 4. Model description
 ### Model
 The prediction was created using a Gradient Boosted Tree (with xgboost).
+
+### Data Visualisation
+For the data exploration, pandas profiling was used. The exported html profiles can be found in the visualisation folder.
 
 ### Features used
 Existing features (used as is):
@@ -87,10 +91,34 @@ Engineered features:
 
 'Year', ‘Month’, ‘Day’, ‘WeekOfYear’, 'PromoMonth'.
 
+
+![](./visualisations/importances.png)
+
+
 ### Scoring
 
 On kaggle, this model was evaluated on the root mean square percentage error (RMSPE).
 
-RMSPE = 
+RMSPE = .164
 
+### Other improvement attempts
+
+The following are attempts which did not result in an improvement of the general performance of the model:
+
+
+Models:
+- Mean Lazy Estimator
+- Linear Regression
+- Random Forest Regression
+- Tested Gradient Boosted Trees (xgBoost) parameters with validation set
+
+Feature Engineering:
+- one-hot encode all features
+- target encode all features
+- combination of the above two
+- cyclic encoding with sinus and cosinus for DayOfWeek, day, month, year.
+- upsampling store and assortment (see figures 1 and 2 below).
+- imputing values for CompetitionDistance. 75km (maximum value for the feature) was set for the missing values (see figure 3 below).
+
+![](./visualisations/features.png)
 
