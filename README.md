@@ -26,20 +26,19 @@ With SSH: `git clone git@github.com:alovg/DSR_minicomp.git`
 
 With HTTPS: `git clone https://github.com/alovg/DSR_minicomp.git`
 
-2. Compatible python version is 3.8.12
+2. Create environment
 
-If you have jupyter notebook installed in your 'base' environment run:
-`conda create -n minicomp python=3.8.12 pip ipykernel`
-
-Otherwise: install jupyter notebook in miniconda environment with `pip3 install jupyter`
-
+    1. run `conda create -n minicomp python=3.8.12 pip ipykernel`
+    2. install jupyter notebook in minicomp environment with `pip3 install jupyter`
+    3. `python -m ipykernel install --user --name minicomp --display-name “minicomp”`
 
 3. Get requirements by running `pip3 install -r requirements.txt`
 4. Run file
 
     1. from the cloned repository in your terminal, run `jupyter notebook`
-    2. navigate to _xgb_group1.ipynb_ in browser 
-    3. Run all cells (from taskbar: go to run> run all cells)
+    2. navigate to _xgb_group1.ipynb_ in browser
+    3. select "minicomp" kernel
+    4. Run all cells (from taskbar: go to run> run all cells)
 
 6. You should now have a submission.csv file in the same folder.
 
