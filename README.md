@@ -61,7 +61,7 @@ Once cloned, the structure of the folder should look like:
 >
 > ├── Requirements.txt
 > 
-> └── xgb_group1.ipynb`
+> └── xgb_group1.ipynb
 
 The data folder should look like:
 
