@@ -26,7 +26,7 @@ With SSH: `git clone git@github.com:alovg/DSR_minicomp.git`
 
 With HTTPS: `git clone https://github.com/alovg/DSR_minicomp.git`
 
-2. Create environment
+2. Create environment. Compatible python version is 3.8.12.
 
     1. run `conda create -n minicomp python=3.8.12 pip ipykernel`
     2. install jupyter notebook in minicomp environment with `pip3 install jupyter`
